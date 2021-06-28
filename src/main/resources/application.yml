@@ -1,0 +1,7 @@
+
+logging:
+  level:
+    com.jos.dem.soap: INFO
+    org:
+      springframework:
+        ws: DEBUG
