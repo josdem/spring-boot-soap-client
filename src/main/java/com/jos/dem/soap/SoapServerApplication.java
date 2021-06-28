@@ -1,5 +1,7 @@
 package com.jos.dem.soap;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,6 +11,8 @@ import com.jos.dem.soap.wsdl.GetCountryResponse;
 
 @SpringBootApplication
 public class SoapServerApplication {
+
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	public static void main(String[] args) {
 		SpringApplication.run(SoapServerApplication.class, args);
@@ -23,7 +27,7 @@ public class SoapServerApplication {
 				country = args[0];
 			}
 			GetCountryResponse response = quoteClient.getCountry(country);
-			System.err.println(response.getCountry().getCurrency());
+			log.info("Currency: {}", response.getCountry().getCurrency());
 		};
 	}
 

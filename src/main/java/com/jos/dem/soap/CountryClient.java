@@ -11,7 +11,7 @@ import com.jos.dem.soap.wsdl.GetCountryResponse;
 
 public class CountryClient extends WebServiceGatewaySupport {
 
-    private static final Logger log = LoggerFactory.getLogger(CountryClient.class);
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     public GetCountryResponse getCountry(String country) {
 
