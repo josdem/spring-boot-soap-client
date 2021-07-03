@@ -1,6 +1,5 @@
 @Grab('com.github.groovy-wslite:groovy-wslite:1.1.3')
 
-
 import wslite.soap.SOAPClient
 
 File file = new File('request.xml')
