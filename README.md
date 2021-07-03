@@ -8,3 +8,7 @@ This repository shows you how to create a basic SOAP client project using [Sprin
 ```bash
 mvn spring-boot:run
 ```
+
+#### See this project is the server side
+
+https://github.com/josdem/spring-boot-soap-server
