@@ -12,6 +12,4 @@ def client = new SOAPClient(url)
 def response = client.send(file.text)
 
 assert 200 == response.httpResponse.statusCode
-
-println response.dump()
 print response.text
