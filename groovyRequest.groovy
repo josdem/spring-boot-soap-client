@@ -11,5 +11,5 @@ String url = 'http://localhost:8080/ws'
 def client = new SOAPClient(url)
 def response = client.send(file.text)
 
-assert 200 == response.httpResponse.statusCode
 print response.text
+assert 200 == response.httpResponse.statusCode
